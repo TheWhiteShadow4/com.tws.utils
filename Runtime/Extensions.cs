@@ -86,7 +86,7 @@ public static class Vector2Extension
 	{
 		//v = v.normalized;
 		float rotZ = Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg;
-		return Quaternion.Euler(0f, 0f, rotZ - 90);
+		return Quaternion.Euler(0f, 0f, rotZ);
 	}
 }
 
