@@ -52,7 +52,7 @@ namespace TWS.Utils
 			};
 			return handle;
 		}
-		
+
 		void Update()
 		{
 			currentTime += Time.deltaTime;
@@ -69,7 +69,7 @@ namespace TWS.Utils
 						}
 						catch (System.Exception e)
 						{
-							Debug.LogError("Timer callback failed: " + e.Message);
+							Debug.LogError("Timer callback failed: " + e.StackTrace);
 						}
 
 						if (timer.interval > 0 && timer.nextRun != 0)
@@ -98,4 +98,4 @@ namespace TWS.Utils
 			internal TimerHandle handle;
 		}
 	}
-} 
+}
